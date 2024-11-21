@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-News</title>
+        <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>K-News</h1>
+             <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Log in</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+   <div id="login-overlay" class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="button" id="login-btn">Log In</button>
+        </form>
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+ 
+  <footer>
+        <div class="container">
+            <p>&copy; 2024 K-News. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+  document.getElementById('login-btn').addEventListener('click', () => {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    if (username && password) {
+        window.location.href = 'index.html'; 
+    } else {
+        alert('Please enter both username and password.');
+    }
+});
+</script>

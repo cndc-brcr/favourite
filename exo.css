@@ -1,0 +1,95 @@
+
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #a0522d;
+            color: white;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            margin: 20px 0;
+        }
+
+        .main-content img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .main-content p {
+            margin-bottom: 20px;
+        }
+
+        .main-content a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #333;
+            text-decoration: none;
+            background-color: #f4f4f4;
+            padding: 10px 15px;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        .main-content a:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color:	#a0522d;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
